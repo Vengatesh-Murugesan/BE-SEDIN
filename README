@@ -1,0 +1,19 @@
+## Setup Instructions
+
+1. **Backend Setup**:
+
+   - Navigate to the `backend` directory.
+   - Run `npm install` to install dependencies.
+   - Set up your MongoDB database and update the connection string in `backend/app.js` if necessary.
+   - Run `npm start` to start the backend server.
+
+## API Endpoints
+
+- **GET /api/projects**: Get all projects
+- **POST /api/projects**: Create a new project
+- **GET /api/projects/:id**: Get details of a project by ID
+- **POST /api/projects/:projectId/tasks**: Create a new task for a project
+- **GET /api/projects/:projectId/tasks/:taskId**: Get details of a task by ID
+- **PATCH /api/projects/:projectId/tasks/:taskId**: Update details of a task by ID
+- **DELETE /api/projects/:projectId/tasks/:taskId**: Delete a task by ID
+- **DELETE /api/projects/:projectId/tasks**: Delete all tasks for a project
