@@ -7,6 +7,12 @@
    - Set up your MongoDB database and update the connection string in `backend/app.js` if necessary.
    - Run `npm start` to start the backend server.
 
+2. **Hosted in Render**:
+
+## api endpoints are available in below end point
+
+**base-url=https://sedin-backend.onrender.com/api/v1/**
+
 ## API Endpoints
 
 - **GET /api/projects**: Get all projects
