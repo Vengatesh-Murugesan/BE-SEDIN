@@ -20,7 +20,7 @@ exports.createProject = async (req, res) => {
 // Retrieve a list of all projects
 exports.getAllProjects = async (req, res) => {
   try {
-    const projects = await Project.find().populate("tasks");
+    const projects = await Project.find();
     res.json(projects);
   } catch (err) {
     res.status(500).json({ message: err.message });
