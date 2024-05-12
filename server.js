@@ -20,7 +20,6 @@ app.use((req, res, next) => {
   res.status(404).json({ message: "Route not found" });
 });
 
-// intentionally i haven't used the port from .env file as i was getting error in deployment in render platform
 const port = process.env.PORT;
 const start = async () => {
   try {
