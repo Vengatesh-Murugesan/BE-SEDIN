@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 });
 
 // intentionally i haven't used the port from .env file as i was getting error in deployment in render platform
-const port = 6000;
+const port = process.env.PORT;
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
